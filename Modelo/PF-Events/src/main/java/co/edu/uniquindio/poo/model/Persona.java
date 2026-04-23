@@ -14,7 +14,8 @@ public abstract class Persona {
      * @param telefono de la persona
      */
 
-    public Persona(String correo, String idUsuario, String nombre, Principal ownedByPrincipal, String telefono) {
+    public Persona(String correo, String idUsuario, String nombre, Principal ownedByPrincipal,
+                   String telefono) {
         this.correo = correo;
         this.idUsuario = idUsuario;
         this.nombre = nombre;

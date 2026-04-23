@@ -1,16 +1,26 @@
 public class Usuario extends Persona {
     private List<Compra> listaCompras;
     private List<Incidencia> listaIncidencias;
+    private List<MetodoDePago> listaMetodoDePagos;
 
     /**
-     * constructor del usuario
-     * @param listaCompras del usuario
-     * @param listaIncidencias del usuario
+     * constructor de usuario
+     * @param listaCompras
+     * @param listaIncidencias
+     * @param listaMetodoDePagos
      */
-    public Usuario(List<Compra> listaCompras, List<Incidencia> listaIncidencias) {
-        super(correo,idUsuario,nombre,ownedByPrincipal, telefono);
+    public Usuario(List<Compra> listaCompras, List<Incidencia> listaIncidencias, List<MetodoDePago> listaMetodoDePagos) {
         this.listaCompras = listaCompras;
         this.listaIncidencias = listaIncidencias;
+        this.listaMetodoDePagos = listaMetodoDePagos;
+    }
+
+    public List<MetodoDePago> getListaMetodoDePagos() {
+        return listaMetodoDePagos;
+    }
+
+    public void setListaMetodoDePagos(List<MetodoDePago> listaMetodoDePagos) {
+        this.listaMetodoDePagos = listaMetodoDePagos;
     }
 
     public List<Compra> getListaCompras() {
