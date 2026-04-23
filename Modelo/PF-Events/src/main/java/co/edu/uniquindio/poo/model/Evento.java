@@ -1,4 +1,13 @@
+import java.time.LocalDate;
+import java.util.List;
+
 public class Evento{
+    private String nombre;
+    private String id;
+    private String descripcion;
+    private String ciudad;
+    private int hora;
+    private LocalDate fecha;
     private List<Politica> listaPoliticas;
     private List<DetalleEvento> listaDetalleEvento;
     private Filtro ownedByFiltro;
@@ -10,33 +19,92 @@ public class Evento{
     private Principal ownedByPrincipal;
     private Compra ownedByCompra;
 
-
-    /***
-     * constructor del evento
+    /**
+     * constructor de evento
      * @param cagoriaEvento
+     * @param ciudad
+     * @param descripcion
      * @param estadoEvento
+     * @param fecha
+     * @param hora
+     * @param id
      * @param listaDetalleEvento
      * @param listaPoliticas
      * @param listaReportePago
      * @param metrica
+     * @param nombre
      * @param ownedByCompra
      * @param ownedByFiltro
      * @param ownedByPrincipal
      * @param recinto
      */
-    public Evento(CategoriaEvento cagoriaEvento, EstadoEvento estadoEvento, List<DetalleEvento> listaDetalleEvento, List<Politica> listaPoliticas, List<ReportePago> listaReportePago, Metrica metrica, Compra ownedByCompra, Filtro ownedByFiltro,
-                  Principal ownedByPrincipal, Recinto recinto) {
-        super()
+
+    public Evento(CategoriaEvento cagoriaEvento, String ciudad, String descripcion,
+                  EstadoEvento estadoEvento, LocalDate fecha, int hora, String id, List<DetalleEvento> listaDetalleEvento, List<Politica> listaPoliticas, List<ReportePago> listaReportePago, Metrica metrica, String nombre, Compra ownedByCompra, Filtro ownedByFiltro, Principal ownedByPrincipal, Recinto recinto) {
         this.cagoriaEvento = cagoriaEvento;
+        this.ciudad = ciudad;
+        this.descripcion = descripcion;
         this.estadoEvento = estadoEvento;
+        this.fecha = fecha;
+        this.hora = hora;
+        this.id = id;
         this.listaDetalleEvento = listaDetalleEvento;
         this.listaPoliticas = listaPoliticas;
         this.listaReportePago = listaReportePago;
         this.metrica = metrica;
+        this.nombre = nombre;
         this.ownedByCompra = ownedByCompra;
         this.ownedByFiltro = ownedByFiltro;
         this.ownedByPrincipal = ownedByPrincipal;
         this.recinto = recinto;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+    public int getHora() {
+        return hora;
+    }
+
+    public void setHora(int hora) {
+        this.hora = hora;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public CategoriaEvento getCagoriaEvento() {
