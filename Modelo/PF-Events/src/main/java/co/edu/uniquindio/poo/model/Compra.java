@@ -29,7 +29,22 @@ public class Compra {
      * @return simulacion de comprobante
      */
     public String descargarComprobante (){
-        return "";
+        String mensaje =
+                  "Estado de la compra: " + estadoCompra
+                + "\n Usuario:      " // + Usuario.getNombre() + "-" + Usuario.getCedula()
+                + "\n Estado:       "
+                + "\n Id:           "
+                + "\n Fecha Compra: "
+
+                ;
+
+        for (ServicioAdicional s : serviciosAdicionales){
+            mensaje += "\n" + s.getDescribcion();
+        }
+
+        mensaje += "\n--------------------------------------\nTotal compra: " + total;
+
+        return mensaje;
     }
 
     /**
