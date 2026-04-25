@@ -1,7 +1,5 @@
 package co.edu.uniquindio.poo.model;
 
-import co.edu.uniquindio.poo.model.ClaseTestTest;
-
 import static org.junit.Assert.*;
 import java.util.logging.Logger;
 import org.junit.Test;
@@ -16,22 +14,22 @@ public class AsientoTest {
     @Test
     public void datosNull(){
         LOG.info("Inicio prueba asiento datosNull");
-        assertThrows(Throwable.class, () -> new Asiento(null, 0, 0));
+        assertThrows(Throwable.class, () -> new Asiento(null, 1, 1));
         LOG.info("Fin prueba asiento datosNull");
     }
 
     @Test
     public void datosBlanck(){
         LOG.info("Inicio prueba asiento datosBlanck");
-        assertThrows(Throwable.class, () -> new Asiento("", 0, 0));
+        assertThrows(Throwable.class, () -> new Asiento("", 1, 1));
         LOG.info("Fin prueba asiento datosBlanck");
     }
 
     @Test
-    public void datosCeros(){
-        LOG.info("Inicio prueba asiento datosCeros");
+    public void datosNegativos(){
+        LOG.info("Inicio prueba asiento datosNegativos");
         assertThrows(Throwable.class, () -> new Asiento("1", -1, -1));
-        LOG.info("Fin prueba asiento datosCeros");
+        LOG.info("Fin prueba asiento datosNegativos");
     }
 
 

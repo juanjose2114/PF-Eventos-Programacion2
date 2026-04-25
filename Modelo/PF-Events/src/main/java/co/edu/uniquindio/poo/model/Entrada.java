@@ -14,6 +14,6 @@ public class Entrada {
         this.estadoEntrada = estadoEntrada;
     }
 
-    // - seleccionarEntradaPorAsientos
+    // - seleccionarEntradaPorAsientos      aqui no va
 
 }

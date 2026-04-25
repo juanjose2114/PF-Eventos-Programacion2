@@ -6,7 +6,8 @@ import co.edu.uniquindio.poo.model.Asiento;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        Asiento asiento = new Asiento(null, 0, 0);
-        System.out.println("LAGOOOOOOOOOOOOOOOOOOOOO---" + asiento.getId());
+        Asiento asiento = new Asiento("null", 1, 1);
+        //Asiento asiento = new Asiento(null, 0, 0);
+        System.out.println("LAGO--------------------" + "\n" + asiento.toString());
     }
 }
