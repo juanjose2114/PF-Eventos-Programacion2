@@ -1,6 +1,6 @@
+package co.edu.uniquindio.poo.model;
 import java.time.LocalDate;
 import java.util.List;
-
 public class Evento{
     private String nombre;
     private String id;
@@ -10,13 +10,10 @@ public class Evento{
     private LocalDate fecha;
     private List<Politica> listaPoliticas;
     private List<DetalleEvento> listaDetalleEvento;
-    private Filtro ownedByFiltro;
     private Recinto recinto;
     private EstadoEvento estadoEvento;
     private CategoriaEvento cagoriaEvento;
-    private Metrica metrica;
-    private List<ReportePago> listaReportePago;
-    private Principal ownedByPrincipal;
+    private GestorEvento ownedByGestorEvento;
     private Compra ownedByCompra;
 
     /**
@@ -30,17 +27,14 @@ public class Evento{
      * @param id
      * @param listaDetalleEvento
      * @param listaPoliticas
-     * @param listaReportePago
-     * @param metrica
      * @param nombre
      * @param ownedByCompra
-     * @param ownedByFiltro
-     * @param ownedByPrincipal
+     * @param ownedByGestorEvento
      * @param recinto
      */
 
     public Evento(CategoriaEvento cagoriaEvento, String ciudad, String descripcion,
-                  EstadoEvento estadoEvento, LocalDate fecha, int hora, String id, List<DetalleEvento> listaDetalleEvento, List<Politica> listaPoliticas, List<ReportePago> listaReportePago, Metrica metrica, String nombre, Compra ownedByCompra, Filtro ownedByFiltro, Principal ownedByPrincipal, Recinto recinto) {
+                  EstadoEvento estadoEvento, LocalDate fecha, int hora, String id, List<DetalleEvento> listaDetalleEvento, List<Politica> listaPoliticas, String nombre, Compra ownedByCompra,GestorEvento ownedByGestorEvento, Recinto recinto) {
         this.cagoriaEvento = cagoriaEvento;
         this.ciudad = ciudad;
         this.descripcion = descripcion;
@@ -50,12 +44,9 @@ public class Evento{
         this.id = id;
         this.listaDetalleEvento = listaDetalleEvento;
         this.listaPoliticas = listaPoliticas;
-        this.listaReportePago = listaReportePago;
-        this.metrica = metrica;
         this.nombre = nombre;
         this.ownedByCompra = ownedByCompra;
-        this.ownedByFiltro = ownedByFiltro;
-        this.ownedByPrincipal = ownedByPrincipal;
+        this.ownedByGestorEvento = ownedByGestorEvento;
         this.recinto = recinto;
     }
 
@@ -139,22 +130,6 @@ public class Evento{
         this.listaPoliticas = listaPoliticas;
     }
 
-    public List<ReportePago> getListaReportePago() {
-        return listaReportePago;
-    }
-
-    public void setListaReportePago(List<ReportePago> listaReportePago) {
-        this.listaReportePago = listaReportePago;
-    }
-
-    public Metrica getMetrica() {
-        return metrica;
-    }
-
-    public void setMetrica(Metrica metrica) {
-        this.metrica = metrica;
-    }
-
     public Compra getOwnedByCompra() {
         return ownedByCompra;
     }
@@ -163,20 +138,12 @@ public class Evento{
         this.ownedByCompra = ownedByCompra;
     }
 
-    public Filtro getOwnedByFiltro() {
-        return ownedByFiltro;
+    public GestorEvento getOwnedByPrincipal() {
+        return ownedByGestorEvento;
     }
 
-    public void setOwnedByFiltro(Filtro ownedByFiltro) {
-        this.ownedByFiltro = ownedByFiltro;
-    }
-
-    public Principal getOwnedByPrincipal() {
-        return ownedByPrincipal;
-    }
-
-    public void setOwnedByPrincipal(Principal ownedByPrincipal) {
-        this.ownedByPrincipal = ownedByPrincipal;
+    public void setOwnedByPrincipal(GestorEvento ownedByPrincipal) {
+        this.ownedByGestorEvento = ownedByPrincipal;
     }
 
     public Recinto getRecinto() {

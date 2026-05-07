@@ -1,3 +1,4 @@
+package co.edu.uniquindio.poo.model;
 public class Zona {
     private String id;
     private String nombre;
