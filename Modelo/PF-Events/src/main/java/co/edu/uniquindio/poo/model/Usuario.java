@@ -1,3 +1,7 @@
+package co.edu.uniquindio.poo.model;
+
+import java.util.List;
+
 public class Usuario extends Persona {
     private List<Compra> listaCompras;
     private List<Incidencia> listaIncidencias;

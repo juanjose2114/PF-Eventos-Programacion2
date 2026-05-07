@@ -1,3 +1,7 @@
+package co.edu.uniquindio.poo.model;
+
+import java.util.List;
+
 public class Recinto {
     private String nombre;
     private String direccion;
@@ -5,16 +9,16 @@ public class Recinto {
     private String ciudad;
     private List<Zona> listaZonas;
     private Evento ownedByEvento;
-    private Principal ownedByPrincipal;
+    private GestorEvento ownedByGestorEvento;
 
-    public Recinto(String ciudad, String direccion, String id, List<Zona> listaZonas, String nombre, Evento ownedByEvento, Principal ownedByPrincipal) {
+    public Recinto(String ciudad, String direccion, String id, List<Zona> listaZonas, String nombre, Evento ownedByEvento, GestorEvento ownedByGestorEvento) {
         this.ciudad = ciudad;
         this.direccion = direccion;
         this.id = id;
         this.listaZonas = listaZonas;
         this.nombre = nombre;
         this.ownedByEvento = ownedByEvento;
-        this.ownedByPrincipal = ownedByPrincipal;
+        this.ownedByGestorEvento = ownedByGestorEvento;
     }
 
     public String getCiudad() {
@@ -65,11 +69,11 @@ public class Recinto {
         this.ownedByEvento = ownedByEvento;
     }
 
-    public Principal getOwnedByPrincipal() {
-        return ownedByPrincipal;
+    public GestorEvento getOwnedByGestorEvento() {
+        return ownedByGestorEvento;
     }
 
-    public void setOwnedByPrincipal(Principal ownedByPrincipal) {
-        this.ownedByPrincipal = ownedByPrincipal;
+    public void setOwnedByPrincipal(GestorEvento ownedByGestorEvento) {
+        this.ownedByGestorEvento= ownedByGestorEvento;
     }
 }

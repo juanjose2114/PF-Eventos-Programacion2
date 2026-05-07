@@ -1,25 +1,26 @@
+package co.edu.uniquindio.poo.model;
 public abstract class Persona {
     private String idUsuario;
     private String nombre;
     private String telefono;
     private String correo;
-    private Principal ownedByPrincipal;
+    private GestorEvento ownedByGestorEvento;
 
     /***
      * Constructor de la clase Persona
      * @param correo de la persona
      * @param idUsuario de la persona
      * @param nombre de la persona
-     * @param ownedByPrincipal
+     * @param ownedByGestorEvento
      * @param telefono de la persona
      */
 
-    public Persona(String correo, String idUsuario, String nombre, Principal ownedByPrincipal,
+    public Persona(String correo, String idUsuario, String nombre, GestorEvento ownedByGestorEvento,
                    String telefono) {
         this.correo = correo;
         this.idUsuario = idUsuario;
         this.nombre = nombre;
-        this.ownedByPrincipal = ownedByPrincipal;
+        this.ownedByGestorEvento = ownedByGestorEvento;
         this.telefono = telefono;
     }
 
@@ -47,12 +48,12 @@ public abstract class Persona {
         this.nombre = nombre;
     }
 
-    public Principal getOwnedByPrincipal() {
-        return ownedByPrincipal;
+    public GestorEvento getOwnedByPrincipal() {
+        return ownedByGestorEvento;
     }
 
-    public void setOwnedByPrincipal(Principal ownedByPrincipal) {
-        this.ownedByPrincipal = ownedByPrincipal;
+    public void setOwnedByPrincipal(GestorEvento ownedByGestorEvento) {
+        this.ownedByGestorEvento = ownedByGestorEvento;
     }
 
     public String getTelefono() {

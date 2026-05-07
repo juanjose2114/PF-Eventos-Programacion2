@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.model;
 
+import java.security.Principal;
 import java.time.LocalDate;
 
 public class Notificacion {
@@ -8,7 +9,7 @@ public class Notificacion {
     private String mensaje;
     private LocalDate fecha;
     private TipoNotificacion tipoNotificacion;
-    private Principal ownedByPrincipal;
+    private GestorEvento ownedByGestorEvento;
     private Compra compra;
 
     /**
@@ -71,12 +72,12 @@ public class Notificacion {
         this.tipoNotificacion = tipoNotificacion;
     }
 
-    public Principal getOwnedByPrincipal() {
-        return ownedByPrincipal;
+    public GestorEvento getOwnedByGestorEvento() {
+        return ownedByGestorEvento;
     }
 
-    public void setOwnedByPrincipal(Principal ownedByPrincipal) {
-        this.ownedByPrincipal = ownedByPrincipal;
+    public void setOwnedByGestorEvento(GestorEvento ownedByGestorEvento) {
+        this.ownedByGestorEvento = ownedByGestorEvento;
     }
 
     public Compra getCompra() {

@@ -1,13 +1,18 @@
+package co.edu.uniquindio.poo.model;
+
+import java.time.LocalDate;
+import java.util.List;
+
 public class DetalleEvento{
     private Evento ownedByEvento;
     private List<Politica> listaPoliticas;
-    private Sting descripcion;
+    private String descripcion;
     private String lugar;
     private LocalDate fecha;
     private String aforo;
 
 
-    public DetalleEvento(String aforo, Sting descripcion, LocalDate fecha, List<Politica> listaPoliticas,
+    public DetalleEvento(String aforo, String descripcion, LocalDate fecha, List<Politica> listaPoliticas,
                          String lugar, Evento ownedByEvento) {
         this.aforo = aforo;
         this.descripcion = descripcion;
@@ -25,11 +30,11 @@ public class DetalleEvento{
         this.aforo = aforo;
     }
 
-    public Sting getDescripcion() {
+    public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(Sting descripcion) {
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
