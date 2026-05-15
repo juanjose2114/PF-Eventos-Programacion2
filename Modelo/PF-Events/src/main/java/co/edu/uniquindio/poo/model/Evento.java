@@ -1,7 +1,10 @@
 package co.edu.uniquindio.poo.model;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
+
 public class Evento{
+
     private String nombre;
     private String id;
     private String descripcion;
@@ -9,43 +12,38 @@ public class Evento{
     private int hora;
     private LocalDate fecha;
     private List<Politica> listaPoliticas;
-    private List<DetalleEvento> listaDetalleEvento;
+    private List<Persona> listaPersonas;
     private Recinto recinto;
     private EstadoEvento estadoEvento;
     private CategoriaEvento cagoriaEvento;
+    private List<Incidencia> listaIncidencias;
     private GestorEvento ownedByGestorEvento;
-    private Compra ownedByCompra;
+    private Compra compra;
 
     /**
-     * constructor de evento
-     * @param cagoriaEvento
+     * constructor de la clase evento
      * @param ciudad
      * @param descripcion
-     * @param estadoEvento
      * @param fecha
      * @param hora
      * @param id
-     * @param listaDetalleEvento
-     * @param listaPoliticas
      * @param nombre
-     * @param ownedByCompra
      * @param ownedByGestorEvento
-     * @param recinto
      */
-
-    public Evento(CategoriaEvento cagoriaEvento, String ciudad, String descripcion,
-                  EstadoEvento estadoEvento, LocalDate fecha, int hora, String id, List<DetalleEvento> listaDetalleEvento, List<Politica> listaPoliticas, String nombre, Compra ownedByCompra,GestorEvento ownedByGestorEvento, Recinto recinto) {
+    public Evento( String ciudad,  String descripcion,LocalDate fecha,int hora, String id,
+                   String nombre, GestorEvento ownedByGestorEvento) {
         this.cagoriaEvento = cagoriaEvento;
         this.ciudad = ciudad;
+        this.compra = compra;
         this.descripcion = descripcion;
         this.estadoEvento = estadoEvento;
         this.fecha = fecha;
         this.hora = hora;
         this.id = id;
-        this.listaDetalleEvento = listaDetalleEvento;
-        this.listaPoliticas = listaPoliticas;
+        this.listaIncidencias = new ArrayList<>();
+        this.listaPersonas = new ArrayList<>();
+        this.listaPoliticas = new ArrayList<>();
         this.nombre = nombre;
-        this.ownedByCompra = ownedByCompra;
         this.ownedByGestorEvento = ownedByGestorEvento;
         this.recinto = recinto;
     }
@@ -114,28 +112,12 @@ public class Evento{
         this.estadoEvento = estadoEvento;
     }
 
-    public List<DetalleEvento> getListaDetalleEvento() {
-        return listaDetalleEvento;
-    }
-
-    public void setListaDetalleEvento(List<DetalleEvento> listaDetalleEvento) {
-        this.listaDetalleEvento = listaDetalleEvento;
-    }
-
     public List<Politica> getListaPoliticas() {
         return listaPoliticas;
     }
 
     public void setListaPoliticas(List<Politica> listaPoliticas) {
         this.listaPoliticas = listaPoliticas;
-    }
-
-    public Compra getOwnedByCompra() {
-        return ownedByCompra;
-    }
-
-    public void setOwnedByCompra(Compra ownedByCompra) {
-        this.ownedByCompra = ownedByCompra;
     }
 
     public GestorEvento getOwnedByPrincipal() {
@@ -152,6 +134,38 @@ public class Evento{
 
     public void setRecinto(Recinto recinto) {
         this.recinto = recinto;
+    }
+
+    public Compra getCompra() {
+        return this.compra;
+    }
+
+    public void setCompra(final Compra compra) {
+        this.compra = compra;
+    }
+
+    public List<Incidencia> getListaIncidencias() {
+        return this.listaIncidencias;
+    }
+
+    public void setListaIncidencias(final List<Incidencia> listaIncidencias) {
+        this.listaIncidencias = listaIncidencias;
+    }
+
+    public List<Persona> getListaPersonas() {
+        return this.listaPersonas;
+    }
+
+    public void setListaPersonas(final List<Persona> listaPersonas) {
+        this.listaPersonas = listaPersonas;
+    }
+
+    public GestorEvento getOwnedByGestorEvento() {
+        return this.ownedByGestorEvento;
+    }
+
+    public void setOwnedByGestorEvento(final GestorEvento ownedByGestorEvento) {
+        this.ownedByGestorEvento = ownedByGestorEvento;
     }
 }
 
