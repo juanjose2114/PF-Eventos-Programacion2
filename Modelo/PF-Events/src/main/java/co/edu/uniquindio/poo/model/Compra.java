@@ -74,4 +74,5 @@ public class Compra {
     public void setUsuario(final Usuario usuario) {
         this.usuario = usuario;
     }
+
 }

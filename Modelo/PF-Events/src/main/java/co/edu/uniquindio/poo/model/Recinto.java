@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Recinto {
@@ -11,11 +12,20 @@ public class Recinto {
     private Evento ownedByEvento;
     private GestorEvento ownedByGestorEvento;
 
-    public Recinto(String ciudad, String direccion, String id, List<Zona> listaZonas, String nombre, Evento ownedByEvento, GestorEvento ownedByGestorEvento) {
+    /**
+     * constructor de la clase recinto
+     * @param ciudad
+     * @param direccion
+     * @param id
+     * @param nombre
+     * @param ownedByEvento
+     * @param ownedByGestorEvento
+     */
+    public Recinto(String ciudad, String direccion, String id, String nombre, Evento ownedByEvento, GestorEvento ownedByGestorEvento) {
         this.ciudad = ciudad;
         this.direccion = direccion;
         this.id = id;
-        this.listaZonas = listaZonas;
+        this.listaZonas = new ArrayList<>();
         this.nombre = nombre;
         this.ownedByEvento = ownedByEvento;
         this.ownedByGestorEvento = ownedByGestorEvento;
