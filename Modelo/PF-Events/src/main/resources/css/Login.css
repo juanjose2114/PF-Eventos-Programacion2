@@ -6,7 +6,7 @@
     -fx-background-color: #FFFFFF;
     -fx-background-radius: 20;
     -fx-border-radius: 20;
-    -fx-border-color: rgba(147, 112, 219, 0.4); /* Un toque morado sutil en el borde */
+    -fx-border-color: rgba(147, 112, 219, 0.4);
     -fx-border-width: 1.5;
     -fx-padding: 10 15 10 15;
 }
