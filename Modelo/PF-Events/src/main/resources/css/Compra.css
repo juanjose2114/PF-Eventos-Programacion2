@@ -1,0 +1,81 @@
+
+.check-box {
+    -fx-text-fill: #f3e8ff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.check-box .box {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(168, 85, 247, 0.5);
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+.check-box:selected .box {
+    -fx-background-color: #d946ef;
+}
+.check-box .mark {
+    -fx-background-color: white;
+}
+
+
+.custom-spinner {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(168, 85, 247, 0.4);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+.custom-spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.custom-spinner .increment-arrow-button,
+.custom-spinner .decrement-arrow-button {
+    -fx-background-color: rgba(168, 85, 247, 0.2);
+    -fx-text-fill: white;
+}
+
+.button-cancel {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(239, 68, 68, 0.5); /* Rojo sutil */
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-text-fill: #ef4444;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+}
+.button-cancel:hover {
+    -fx-background-color: rgba(239, 68, 68, 0.1);
+    -fx-border-color: #ef4444;
+}
+.button-buy {
+    -fx-background-color: linear-gradient(to right, #d946ef, #a855f7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 12px;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(217, 70, 239, 0.4), 10, 0, 0, 3);
+}
+
+.button-buy:hover {
+    -fx-background-color: linear-gradient(to right, #f472b6, #c084fc);
+}
+.purple-bubble-outline {
+    -fx-border-color: rgba(216, 180, 254, 0.2);
+    -fx-border-width: 2px;
+    -fx-border-radius: 100px;
+    -fx-background-radius: 100px;
+}
+
+.purple-bubble-solid {
+    -fx-background-color: linear-gradient(to bottom, rgba(147, 51, 234, 0.3), rgba(76, 29, 149, 0.05));
+    -fx-background-radius: 90px;
+}
+.root-container {
+    -fx-background-color: linear-gradient(to bottom right, #2e1065, #1e1b4b, #4c1d95);
+}
+
