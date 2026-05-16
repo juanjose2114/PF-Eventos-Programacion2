@@ -1,0 +1,146 @@
+/* ==========================================================================
+   CONFIGURACIÓN DE FONDO (Degradado Galáctico/Morado Vivo - Adiós al Negro)
+   ========================================================================== */
+.root-container {
+    /* Va desde un morado profundo, pasa por un azul medianoche y cierra en un tono uva */
+    -fx-background-color: linear-gradient(to bottom right, #2e1065, #1e1b4b, #4c1d95);
+}
+
+/* ScrollPane transparente para no cortar el degradado del fondo */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Burbujas decorativas de fondo (Glow sutil) */
+.purple-bubble-outline {
+    -fx-border-color: rgba(216, 180, 254, 0.2);
+    -fx-border-width: 2px;
+    -fx-border-radius: 100px;
+    -fx-background-radius: 100px;
+}
+
+.purple-bubble-solid {
+    -fx-background-color: linear-gradient(to bottom, rgba(147, 51, 234, 0.3), rgba(76, 29, 149, 0.05));
+    -fx-background-radius: 90px;
+}
+
+/* ==========================================================================
+   CONTENEDOR DEL BANNER (Transparencia Total del Gris)
+   ========================================================================== */
+.banner-container {
+    -fx-background-color: transparent !important;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.banner-image {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 15, 0, 0, 5);
+}
+
+.banner-overlay {
+    /* Degradado sutil para el texto del banner que combina con el nuevo fondo */
+    -fx-background-color: linear-gradient(to top, rgba(46, 16, 101, 0.9), rgba(30, 27, 75, 0.4), transparent) !important;
+    -fx-padding: 0 0 20 30;
+}
+
+.banner-overlay .label {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* ==========================================================================
+   TARJETAS DE INFORMACIÓN (Efecto Cristal sobre el nuevo fondo)
+   ========================================================================== */
+.glass-info-card {
+
+-fx-background-color: rgba(255, 255, 255, 0.05);
+
+-fx-border-color: rgba(255, 255, 255, 0.1);
+
+-fx-border-width: 1px;
+
+-fx-border-radius: 15px;
+
+-fx-background-radius: 15px;
+
+-fx-padding: 15px;
+
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 4);
+
+}
+
+
+
+.glass-info-card .label {
+
+-fx-text-fill: #ffffff;
+
+}
+
+/* ==========================================================================
+   TARJETAS DE CONTENIDO (Descripción, Políticas, Precios)
+   ========================================================================== */
+.content-card {
+    /* Un morado intermedio semi-transparente para que no se vea plano */
+    -fx-background-color: rgba(59, 7, 100, 0.5);
+    -fx-border-color: rgba(192, 132, 252, 0.25);
+    -fx-border-width: 1px;
+    -fx-border-radius: 18px;
+    -fx-background-radius: 18px;
+}
+
+.content-card .label {
+    -fx-text-fill: #f3e8ff;
+    -fx-font-size: 14px;
+}
+
+.section-title {
+
+-fx-font-size: 18px !important;
+
+-fx-font-weight: bold;
+
+-fx-text-fill: #a78bfa !important; /* Morado claro brillante */
+
+-fx-padding: 0 0 10 0;
+
+}
+
+
+/* ==========================================================================
+   BOTONES
+   ========================================================================== */
+.button-buy {
+    /* Botón en degradado fucsia/magenta a morado vibrante */
+    -fx-background-color: linear-gradient(to right, #d946ef, #a855f7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 12px;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(217, 70, 239, 0.4), 10, 0, 0, 3);
+}
+
+.button-buy:hover {
+    -fx-background-color: linear-gradient(to right, #f472b6, #c084fc);
+}
+
+.button-back-light {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(233, 213, 255, 0.4);
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-text-fill: #e9d5ff;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+}
+
+.button-back-light:hover {
+    -fx-background-color: rgba(233, 213, 255, 0.08);
+    -fx-border-color: #e9d5ff;
+}
