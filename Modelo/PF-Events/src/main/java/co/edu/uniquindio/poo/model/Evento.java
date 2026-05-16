@@ -2,8 +2,7 @@ package co.edu.uniquindio.poo.model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-
-public class Evento{
+public class Evento {
 
     private String nombre;
     private String id;
@@ -22,118 +21,43 @@ public class Evento{
 
     /**
      * constructor de la clase evento
-     * @param ciudad
-     * @param descripcion
-     * @param fecha
-     * @param hora
-     * @param id
-     * @param nombre
-     * @param ownedByGestorEvento
+     * @param builder
      */
-    public Evento( String ciudad,  String descripcion,LocalDate fecha,int hora, String id,
-                   String nombre, GestorEvento ownedByGestorEvento) {
-        this.cagoriaEvento = cagoriaEvento;
-        this.ciudad = ciudad;
-        this.compra = compra;
-        this.descripcion = descripcion;
-        this.estadoEvento = estadoEvento;
-        this.fecha = fecha;
-        this.hora = hora;
-        this.id = id;
-        this.listaIncidencias = new ArrayList<>();
-        this.listaPersonas = new ArrayList<>();
+    private Evento(Builder builder) {
+        this.id = builder.id;
+        this.nombre = builder.nombre;
+        this.descripcion = builder.descripcion;
+        this.ciudad = builder.ciudad;
+        this.hora = builder.hora;
+        this.fecha = builder.fecha;
+        this.recinto = builder.recinto;
+        this.cagoriaEvento = builder.cagoriaEvento;
+        this.ownedByGestorEvento = builder.ownedByGestorEvento;
+        this.estadoEvento = builder.estadoEvento;
         this.listaPoliticas = new ArrayList<>();
-        this.nombre = nombre;
-        this.ownedByGestorEvento = ownedByGestorEvento;
-        this.recinto = recinto;
+        this.listaPersonas =  new ArrayList<>();
+        this.listaIncidencias = new ArrayList<>();
+        this.compra = builder.compra;
+    }
+
+    /**
+     * getters y setters
+     * @return
+     */
+    public CategoriaEvento getCagoriaEvento() {
+        return this.cagoriaEvento;
+    }
+
+    public void setCagoriaEvento(final CategoriaEvento cagoriaEvento) {
+        this.cagoriaEvento = cagoriaEvento;
     }
 
     public String getCiudad() {
-        return ciudad;
+        return this.ciudad;
     }
 
-    public void setCiudad(String ciudad) {
+    public void setCiudad(final String ciudad) {
         this.ciudad = ciudad;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public LocalDate getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(LocalDate fecha) {
-        this.fecha = fecha;
-    }
-
-    public int getHora() {
-        return hora;
-    }
-
-    public void setHora(int hora) {
-        this.hora = hora;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public CategoriaEvento getCagoriaEvento() {
-        return cagoriaEvento;
-    }
-
-    public void setCagoriaEvento(CategoriaEvento cagoriaEvento) {
-        this.cagoriaEvento = cagoriaEvento;
-    }
-
-    public EstadoEvento getEstadoEvento() {
-        return estadoEvento;
-    }
-
-    public void setEstadoEvento(EstadoEvento estadoEvento) {
-        this.estadoEvento = estadoEvento;
-    }
-
-    public List<Politica> getListaPoliticas() {
-        return listaPoliticas;
-    }
-
-    public void setListaPoliticas(List<Politica> listaPoliticas) {
-        this.listaPoliticas = listaPoliticas;
-    }
-
-    public GestorEvento getOwnedByPrincipal() {
-        return ownedByGestorEvento;
-    }
-
-    public void setOwnedByPrincipal(GestorEvento ownedByPrincipal) {
-        this.ownedByGestorEvento = ownedByPrincipal;
-    }
-
-    public Recinto getRecinto() {
-        return recinto;
-    }
-
-    public void setRecinto(Recinto recinto) {
-        this.recinto = recinto;
     }
 
     public Compra getCompra() {
@@ -142,6 +66,46 @@ public class Evento{
 
     public void setCompra(final Compra compra) {
         this.compra = compra;
+    }
+
+    public String getDescripcion() {
+        return this.descripcion;
+    }
+
+    public void setDescripcion(final String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public EstadoEvento getEstadoEvento() {
+        return this.estadoEvento;
+    }
+
+    public void setEstadoEvento(final EstadoEvento estadoEvento) {
+        this.estadoEvento = estadoEvento;
+    }
+
+    public LocalDate getFecha() {
+        return this.fecha;
+    }
+
+    public void setFecha(final LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+    public int getHora() {
+        return this.hora;
+    }
+
+    public void setHora(final int hora) {
+        this.hora = hora;
+    }
+
+    public String getId() {
+        return this.id;
+    }
+
+    public void setId(final String id) {
+        this.id = id;
     }
 
     public List<Incidencia> getListaIncidencias() {
@@ -160,6 +124,22 @@ public class Evento{
         this.listaPersonas = listaPersonas;
     }
 
+    public List<Politica> getListaPoliticas() {
+        return this.listaPoliticas;
+    }
+
+    public void setListaPoliticas(final List<Politica> listaPoliticas) {
+        this.listaPoliticas = listaPoliticas;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setNombre(final String nombre) {
+        this.nombre = nombre;
+    }
+
     public GestorEvento getOwnedByGestorEvento() {
         return this.ownedByGestorEvento;
     }
@@ -167,5 +147,106 @@ public class Evento{
     public void setOwnedByGestorEvento(final GestorEvento ownedByGestorEvento) {
         this.ownedByGestorEvento = ownedByGestorEvento;
     }
-}
 
+    public Recinto getRecinto() {
+        return this.recinto;
+    }
+
+    public void setRecinto(final Recinto recinto) {
+        this.recinto = recinto;
+    }
+
+    /**
+     * clase builder
+     */
+    public static class Builder {
+
+        private String nombre;
+        private String id;
+        private String descripcion;
+        private String ciudad;
+        private int hora;
+        private LocalDate fecha;
+        private List<Politica> listaPoliticas=new ArrayList<>();
+        private List<Persona> listaPersonas=new ArrayList<>();
+        private Recinto recinto;
+        private EstadoEvento estadoEvento;
+        private CategoriaEvento cagoriaEvento;
+        private List<Incidencia> listaIncidencias= new ArrayList<>();
+        private GestorEvento ownedByGestorEvento;
+        private Compra compra;
+
+        /**
+         * constructor de la clase builder de los atributos obligatorios
+         * @param id
+         * @param nombre
+         */
+        public Builder(String id, String nombre) {
+            this.id = id;
+            this.nombre = nombre;
+        }
+
+        /**
+         * metodo builder
+         * @param descripcion
+         * @return
+         */
+        public Builder descripcion(String descripcion) {
+            this.descripcion = descripcion;
+            return this;
+        }
+
+        public Builder ciudad(String ciudad) {
+            this.ciudad = ciudad;
+            return this;
+        }
+
+        public Builder hora(int hora) {
+            this.hora = hora;
+            return this;
+        }
+
+        public Builder fecha(LocalDate fecha) {
+            this.fecha = fecha;
+            return this;
+        }
+
+        public Builder recinto(Recinto recinto) {
+            this.recinto = recinto;
+            return this;
+        }
+
+        public Builder estadoEvento(EstadoEvento estadoEvento) {
+            this.estadoEvento = estadoEvento;
+            return this;
+        }
+
+        public Builder categoriaEvento(CategoriaEvento categoriaEvento) {
+            this.cagoriaEvento = categoriaEvento;
+            return this;
+        }
+
+        public Builder ownedByGestorEvento(GestorEvento ownedByGestorEvento) {
+            this.ownedByGestorEvento = ownedByGestorEvento;
+            return this;
+        }
+
+        /**
+         * metodo para agregar una politica
+         * @param politica
+         * @return
+         */
+        public Builder agregarPolitica(Politica politica) {
+            this.listaPoliticas.add(politica);
+            return this;
+        }
+
+        /**
+         * metodo para construir el objeto
+         * @return
+         */
+        public Evento build() {
+            return new Evento(this);
+        }
+    }
+}
