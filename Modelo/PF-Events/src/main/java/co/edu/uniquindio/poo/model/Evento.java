@@ -34,9 +34,9 @@ public class Evento {
         this.cagoriaEvento = builder.cagoriaEvento;
         this.ownedByGestorEvento = builder.ownedByGestorEvento;
         this.estadoEvento = builder.estadoEvento;
-        this.listaPoliticas = new ArrayList<>();
-        this.listaPersonas =  new ArrayList<>();
-        this.listaIncidencias = new ArrayList<>();
+        this.listaPoliticas = new ArrayList<>(builder.listaPoliticas);
+        this.listaPersonas =  new ArrayList<>(builder.listaPersonas);
+        this.listaIncidencias = new ArrayList<>(builder.listaIncidencias);
         this.compra = builder.compra;
     }
 

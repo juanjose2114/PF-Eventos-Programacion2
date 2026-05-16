@@ -1,13 +1,21 @@
-.login-root {
-    /* Degradado de arriba-izquierda a abajo-derecha */
-    -fx-background-color: linear-gradient(to bottom right, #E0F2FE, #F5F3FF);
+.root-login-container {
+    -fx-background-color: linear-gradient(to bottom right, #E3F2FD, #F5F7FA);
+}
+
+.text-field-custom {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: rgba(147, 112, 219, 0.4); /* Un toque morado sutil en el borde */
+    -fx-border-width: 1.5;
+    -fx-padding: 10 15 10 15;
 }
 /* Estilo figuras */
 .shape-decor {
-    -fx-fill: rgba(111, 66, 193, 0.1); /* Color morado muy transparente */
+    -fx-fill: rgba(111, 66, 193, 0.1);
 }
 
-/* Campos de texto redondos */
+
 .text-input {
     -fx-background-radius: 25;
     -fx-border-radius: 25;
@@ -20,45 +28,7 @@
     -fx-border-color: #6F42C1;
 }
 
-/* Botón de Iniciar Sesión */
-.login-button {
-    -fx-background-color: #6F42C1;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-background-radius: 25;
-    -fx-padding: 12;
-    -fx-cursor: hand;
-}
-.login-button:hover {
-    -fx-background-color: #5A32A3;
-}
-.neon-fucsia-naranja-amarillo {
-    -fx-background-color: linear-gradient(
-        to right,
-        #ff00d4,   /* Fucsia */
-        #ff7b00,   /* Naranja */
-        #fff700    /* Amarillo */
-    );
-
-    -fx-background-radius: 20;
-    -fx-border-radius: 20;
-
-    -fx-text-fill: black;
-    -fx-font-weight: bold;
-    -fx-font-size: 15px;
-
-    -fx-padding: 10 25;
-
-    -fx-effect: dropshadow(gaussian, rgba(255,0,200,0.5), 15, 0.4, 0, 0);
-}
-
-.neon-fucsia-naranja-amarillo:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-
-    -fx-effect: dropshadow(gaussian, rgba(255,200,0,0.7), 18, 0.6, 0, 0);
-}
-/* Estilo link */
+/*link */
 .link-registro {
     -fx-text-fill: #0066cc; /* Color azul clásico de enlace web */
     -fx-underline: true; /* Subrayado activado */
