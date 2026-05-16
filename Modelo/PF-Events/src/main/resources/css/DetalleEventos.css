@@ -1,12 +1,8 @@
-/* ==========================================================================
-   CONFIGURACIÓN DE FONDO (Degradado Galáctico/Morado Vivo - Adiós al Negro)
-   ========================================================================== */
 .root-container {
-    /* Va desde un morado profundo, pasa por un azul medianoche y cierra en un tono uva */
     -fx-background-color: linear-gradient(to bottom right, #2e1065, #1e1b4b, #4c1d95);
 }
 
-/* ScrollPane transparente para no cortar el degradado del fondo */
+
 .scroll-pane {
     -fx-background-color: transparent;
 }
@@ -14,7 +10,6 @@
     -fx-background-color: transparent;
 }
 
-/* Burbujas decorativas de fondo (Glow sutil) */
 .purple-bubble-outline {
     -fx-border-color: rgba(216, 180, 254, 0.2);
     -fx-border-width: 2px;
@@ -27,9 +22,6 @@
     -fx-background-radius: 90px;
 }
 
-/* ==========================================================================
-   CONTENEDOR DEL BANNER (Transparencia Total del Gris)
-   ========================================================================== */
 .banner-container {
     -fx-background-color: transparent !important;
     -fx-background-radius: 20px;
@@ -41,7 +33,7 @@
 }
 
 .banner-overlay {
-    /* Degradado sutil para el texto del banner que combina con el nuevo fondo */
+
     -fx-background-color: linear-gradient(to top, rgba(46, 16, 101, 0.9), rgba(30, 27, 75, 0.4), transparent) !important;
     -fx-padding: 0 0 20 30;
 }
@@ -50,40 +42,24 @@
     -fx-text-fill: #ffffff !important;
 }
 
-/* ==========================================================================
-   TARJETAS DE INFORMACIÓN (Efecto Cristal sobre el nuevo fondo)
-   ========================================================================== */
+
 .glass-info-card {
-
 -fx-background-color: rgba(255, 255, 255, 0.05);
-
 -fx-border-color: rgba(255, 255, 255, 0.1);
-
 -fx-border-width: 1px;
-
 -fx-border-radius: 15px;
-
 -fx-background-radius: 15px;
-
 -fx-padding: 15px;
-
 -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 4);
 
 }
 
-
-
 .glass-info-card .label {
-
 -fx-text-fill: #ffffff;
 
 }
 
-/* ==========================================================================
-   TARJETAS DE CONTENIDO (Descripción, Políticas, Precios)
-   ========================================================================== */
 .content-card {
-    /* Un morado intermedio semi-transparente para que no se vea plano */
     -fx-background-color: rgba(59, 7, 100, 0.5);
     -fx-border-color: rgba(192, 132, 252, 0.25);
     -fx-border-width: 1px;
@@ -95,25 +71,15 @@
     -fx-text-fill: #f3e8ff;
     -fx-font-size: 14px;
 }
-
 .section-title {
-
 -fx-font-size: 18px !important;
-
 -fx-font-weight: bold;
-
--fx-text-fill: #a78bfa !important; /* Morado claro brillante */
-
+-fx-text-fill: #a78bfa !important;
 -fx-padding: 0 0 10 0;
 
 }
 
-
-/* ==========================================================================
-   BOTONES
-   ========================================================================== */
 .button-buy {
-    /* Botón en degradado fucsia/magenta a morado vibrante */
     -fx-background-color: linear-gradient(to right, #d946ef, #a855f7);
     -fx-text-fill: white;
     -fx-font-weight: bold;
