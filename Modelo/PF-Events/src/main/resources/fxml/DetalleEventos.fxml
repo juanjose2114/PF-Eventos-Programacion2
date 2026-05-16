@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ScrollPane fitToWidth="true" prefHeight="750.0" prefWidth="900.0" stylesheets="@../css/DetalleEventos.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <VBox alignment="TOP_CENTER" spacing="25.0" stylesheets="@../css/DetalleEventos.css">
+                    <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="30.0" />
+                    </padding>
+                    <children>
+
+                        <StackPane style="-fx-background-color: #ddd;">
+                            <children>
+                                <ImageView fitHeight="280.0" fitWidth="820.0" pickOnBounds="true" preserveRatio="false" />
+                                <VBox alignment="BOTTOM_LEFT" prefHeight="123.0" prefWidth="820.0" stylesheets="@../css/DetalleEventos.css">
+                                    <padding>
+                                        <Insets bottom="20.0" left="30.0" />
+                                    </padding>
+                                    <children>
+                                        <Label stylesheets="@../css/DetalleEventos.css" text="NOMBRE DEL EVENTO">
+                                            <font>
+                                                <Font name="System Bold" size="42.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                           <styleClass>
+                              <String fx:value="event-title-label" />
+                              <String fx:value="banner-container" />
+                              <String fx:value="banner-overlay" />
+                           </styleClass>
+                                </VBox>
+                            </children>
+                        </StackPane>
+
+                        <HBox alignment="CENTER" spacing="20.0" stylesheets="@../css/DetalleEventos.css">
+                            <children>
+                                <VBox alignment="CENTER" prefWidth="200.0" style="-fx-border-color: #ccc; -fx-padding: 10;" styleClass="glass-info-card" stylesheets="@../css/DetalleEventos.css">
+                                    <children>
+                                        <Label styleClass="section-title" text="FECHA" textFill="#6d28d9" />
+                                        <Label style="-fx-font-weight: bold;" text="fecha" />
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" prefWidth="200.0" style="-fx-border-color: #ccc; -fx-padding: 10;" styleClass="glass-info-card" stylesheets="@../css/DetalleEventos.css">
+                                    <children>
+                                        <Label styleClass="section-title" text="LUGAR" textFill="#6d28d9" />
+                                        <Label style="-fx-font-weight: bold;" stylesheets="@../css/DetalleEventos.css" text="lugar" />
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" prefWidth="200.0" style="-fx-border-color: #ccc; -fx-padding: 10;" styleClass="glass-info-card" stylesheets="@../css/DetalleEventos.css">
+                                    <children>
+                                        <Label styleClass="section-title" text="CIUDAD" textFill="#6d28d9" />
+                                        <Label style="-fx-font-weight: bold;" text="ciudad" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+
+                        <HBox prefHeight="336.0" prefWidth="605.0" spacing="30.0">
+                            <children>
+
+                                <VBox spacing="20.0" styleClass="label" stylesheets="@../css/DetalleEventos.css" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <VBox style="-fx-border-color: #ccc; -fx-padding: 15;" styleClass="content-card" stylesheets="@../css/DetalleEventos.css">
+                                            <children>
+                                                <Label style="-fx-font-weight: bold;" text="Descripción" />
+                                                <Label text="Aquí va la descripción detallada del evento..." wrapText="true" />
+                                            </children>
+                                        </VBox>
+                                        <VBox style="-fx-border-color: #ccc; -fx-padding: 15;" styleClass="content-card">
+                                            <children>
+                                                <Label style="-fx-font-weight: bold;" text="Políticas del Evento" />
+                                                <Label text="- políticas&#10;" wrapText="true" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+
+                                <VBox prefHeight="494.0" prefWidth="327.0" spacing="20.0">
+                                    <children>
+                                        <VBox alignment="CENTER" style="-fx-border-color: #ccc; -fx-padding: 15;" stylesheets="@../css/DetalleEventos.css">
+                                            <children>
+                                                <Label style="-fx-font-weight: bold;" styleClass="section-title" stylesheets="@../css/DetalleEventos.css" text="Mapa de Localidades" />
+                                                <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" styleClass="banner-image" />
+                                            </children>
+                                 <styleClass>
+                                    <String fx:value="banner-container" />
+                                    <String fx:value="glass-info-card" />
+                                 </styleClass>
+                                        </VBox>
+
+                                        <VBox style="-fx-border-color: #ccc; -fx-padding: 15;" styleClass="content-card" stylesheets="@../css/DetalleEvento.css">
+                                            <children>
+                                                <Label style="-fx-font-weight: bold;" text="Precios por Zona" />
+                                                <VBox spacing="15.0">
+                                                    <children>
+                                                        <HBox alignment="CENTER">
+                                                            <children>
+                                                                <Label text="VIP " />
+                                                                <Region HBox.hgrow="ALWAYS" />
+                                                                <Label style="-fx-font-weight: bold;" text="0" />
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER">
+                                                            <children>
+                                                                <Label text="Preferencial" />
+                                                                <Region HBox.hgrow="ALWAYS" />
+                                                                <Label style="-fx-font-weight: bold;" text="0" />
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER">
+                                                            <children>
+                                                                <Label text="General" />
+                                                                <Region HBox.hgrow="ALWAYS" />
+                                                                <Label style="-fx-font-weight: bold;" text="0" />
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </VBox>
+
+                                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../css/DetalleEventos.css" text="RESERVAR AHORA">
+                                 <styleClass>
+                                    <String fx:value="banner-overlay" />
+                                    <String fx:value="button-buy" />
+                                 </styleClass></Button>
+                                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button-back-light" text="Volver a la cartelera" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+               <styleClass>
+                  <String fx:value="root-container" />
+                  <String fx:value="purple-bubble-outline" />
+                  <String fx:value="purple-bubble-solid" />
+               </styleClass>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>
