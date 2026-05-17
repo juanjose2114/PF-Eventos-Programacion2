@@ -1,0 +1,98 @@
+.custom-combo {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(168, 85, 247, 0.4);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+.custom-combo .label {
+    -fx-text-fill: white !important;
+}
+.custom-combo .arrow-button {
+    -fx-background-color: transparent;
+}
+.custom-combo .arrow {
+    -fx-background-color: #e9d5ff;
+}
+
+.custom-field {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(168, 85, 247, 0.4);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.custom-list-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 5px;
+}
+.custom-list-view .list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.03);
+    -fx-text-fill: white;
+    -fx-padding: 12px;
+    -fx-background-radius: 8px;
+    -fx-margin: 4px 0;
+    -fx-border-color: rgba(255,255,255,0.05);
+    -fx-border-radius: 8px;
+}
+.custom-list-view .list-cell:hover {
+    -fx-background-color: rgba(168, 85, 247, 0.2);
+}
+.custom-list-view .list-cell:selected {
+    -fx-background-color: rgba(217, 70, 239, 0.3);
+    -fx-border-color: #d946ef;
+}
+
+.button-pdf {
+    -fx-background-color: linear-gradient(to right, #ef4444, #dc2626);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+.button-pdf:hover {
+    -fx-background-color: linear-gradient(to right, #f87171, #ef4444);
+}
+
+.button-csv {
+    -fx-background-color: linear-gradient(to right, #10b981, #059669);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+.button-csv:hover {
+    -fx-background-color: linear-gradient(to right, #34d399, #10b981);
+}
+/* Link de regreso inferior */
+.back-link-login {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2563EB;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+.back-link-login:hover {
+    -fx-text-fill: #1D4ED8;
+}
+x-background-color: linear-gradient(to bottom right, #2e1065, #1e1b4b, #4c1d95);
+}
+
+.purple-bubble-outline {
+    -fx-border-color: rgba(216, 180, 254, 0.2);
+    -fx-border-width: 2px;
+    -fx-border-radius: 100px;
+    -fx-background-radius: 100px;
+}
+
+.purple-bubble-solid {
+    -fx-background-color: linear-gradient(to bottom, rgba(147, 51, 234, 0.3), rgba(76, 29, 149, 0.05));
+    -fx-background-radius: 90px;
+}
+.root-container {
+    -fx-background-color: linear-gradient(to bottom right, #2e1065, #1e1b4b, #4c1d95);
+}
