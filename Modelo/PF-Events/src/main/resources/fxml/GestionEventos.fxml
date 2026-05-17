@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="900.0" styleClass="root-container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox spacing="20.0" styleClass="root-container" stylesheets="@../css/GestionEventos.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </padding>
+            <children>
+
+                <HBox alignment="CENTER_LEFT">
+                    <children>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Label text="PANEL DE GESTION DE EVENTOS" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Crea, edita y controla el estado de tus eventos en la plataforma" textFill="#e9d5ff" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" styleClass="button-back-light" text="Volver" />
+                    </children>
+                </HBox>
+
+                <HBox spacing="25.0" VBox.vgrow="ALWAYS">
+                    <children>
+
+                        <VBox prefWidth="380.0" spacing="15.0">
+                            <children>
+
+                                <VBox spacing="10.0" styleClass="content-card">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                    </padding>
+                                    <children>
+                                        <Label style="-fx-font-weight: bold; -fx-text-fill: #e9d5ff;" text="Buscar Eventos" />
+                                        <HBox spacing="10.0">
+                                            <children>
+                                                <TextField prefHeight="43.0" prefWidth="200.0" promptText="Nombre del evento..." styleClass="neon-combobox" stylesheets="@../css/GestionEventos.css" HBox.hgrow="ALWAYS" />
+                                                <ComboBox prefHeight="53.0" prefWidth="139.0" promptText="Estado" stylesheets="@../css/GestionEventos.css">
+                                       <styleClass>
+                                          <String fx:value="custom-combo" />
+                                          <String fx:value="button-back-light" />
+                                       </styleClass></ComboBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+
+                                <VBox spacing="10.0" styleClass="content-card" VBox.vgrow="ALWAYS">
+                                    <padding>
+                                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                    </padding>
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT">
+                                            <children>
+                                                <Label styleClass="section-title" text="Listado de Eventos" textFill="#f4eded" />
+                                                <Region HBox.hgrow="ALWAYS" />
+                                                <Button style="-fx-font-size: 11px; -fx-padding: 4 10;" styleClass="button-descargar" text="+ Nuevo" />
+                                            </children>
+                                        </HBox>
+
+                                        <ListView styleClass="neon-combobox" stylesheets="@../css/GestionEventos.css" VBox.vgrow="ALWAYS" />
+                                    </children>
+                                </VBox>
+
+                            </children>
+                        </VBox>
+
+                        <VBox spacing="20.0" HBox.hgrow="ALWAYS">
+                            <children>
+
+                                <VBox spacing="15.0" styleClass="glass-info-card" VBox.vgrow="ALWAYS">
+                                    <padding>
+                                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                                    </padding>
+                                    <children>
+
+                                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Detalles del Evento (Crear / Editar)" />
+
+                                        <VBox spacing="12.0">
+                                            <children>
+                                                <Label text="Nombre del Evento" textFill="#e9d5ff" />
+                                                <TextField promptText="Ej. Concierto Rock Fest 2026" stylesheets="@../css/GestionEventos.css">
+                                       <styleClass>
+                                          <String fx:value="custom-field" />
+                                          <String fx:value="neon-combobox" />
+                                       </styleClass></TextField>
+                                            </children>
+                                        </VBox>
+
+                                        <HBox spacing="15.0">
+                                            <children>
+                                                <VBox spacing="12.0" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <Label text="Fecha" textFill="#e9d5ff" />
+                                                        <TextField promptText="DD/MM/AAAA" styleClass="neon-combobox" stylesheets="@../css/GestionEventos.css" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox spacing="12.0" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <Label text="Ciudad / Lugar" textFill="#e9d5ff" />
+                                                        <TextField promptText="Ej. Estadio Central" stylesheets="@../css/GestionEventos.css">
+                                             <styleClass>
+                                                <String fx:value="custom-field" />
+                                                <String fx:value="neon-combobox" />
+                                             </styleClass></TextField>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+
+                                        <HBox spacing="15.0">
+                                            <children>
+                                                <VBox spacing="12.0" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <Label text="Capacidad Maxima" textFill="#e9d5ff" />
+                                                        <TextField promptText="Ej. 15000" stylesheets="@../css/GestionEventos.css">
+                                             <styleClass>
+                                                <String fx:value="custom-field" />
+                                                <String fx:value="neon-combobox" />
+                                             </styleClass></TextField>
+                                                    </children>
+                                                </VBox>
+                                                <VBox spacing="12.0" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <Label text="Precio Base Entrada" textFill="#e9d5ff" />
+                                                        <TextField promptText="Ej. 120000" stylesheets="@../css/GestionEventos.css">
+                                             <styleClass>
+                                                <String fx:value="custom-field" />
+                                                <String fx:value="neon-combobox" />
+                                             </styleClass></TextField>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+
+                                        <VBox spacing="10.0" style="-fx-padding: 10 0 0 0;">
+                                            <children>
+                                                <Label style="-fx-font-weight: bold;" text="Control de Estado del Evento" textFill="#e9d5ff" />
+                                                <HBox spacing="10.0">
+                                                    <children>
+                                                        <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true" styleClass="toggle-status-publish" text="Publicado" HBox.hgrow="ALWAYS">
+                                                            <toggleGroup>
+                                                                <ToggleGroup fx:id="estadoEvento" />
+                                                            </toggleGroup>
+                                                        </ToggleButton>
+                                                        <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="toggle-status-pause" text="Pausado" toggleGroup="$estadoEvento" HBox.hgrow="ALWAYS" />
+                                                        <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="toggle-status-cancel" text="Cancelar" toggleGroup="$estadoEvento" HBox.hgrow="ALWAYS" />
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+
+                                        <Region VBox.vgrow="ALWAYS" />
+
+                                        <HBox alignment="CENTER_RIGHT">
+                                            <children>
+                                                <Button mnemonicParsing="false" styleClass="button-back-light" stylesheets="@../css/GestionEventos.css" text="GUARDAR CONFIGURACION" />
+                                            </children>
+                                        </HBox>
+
+                                    </children>
+                                </VBox>
+
+                            </children>
+                        </VBox>
+
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

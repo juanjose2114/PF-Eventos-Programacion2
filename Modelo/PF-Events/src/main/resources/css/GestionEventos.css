@@ -1,0 +1,97 @@
+.toggle-status-publish {
+    -fx-background-color: rgba(34, 197, 94, 0.1);
+    -fx-text-fill: #4ade80;
+    -fx-border-color: rgba(34, 197, 94, 0.4);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-padding: 10px;
+}
+.toggle-status-publish:selected {
+    -fx-background-color: #22c55e;
+    -fx-text-fill: white;
+}
+
+.toggle-status-pause {
+    -fx-background-color: rgba(234, 179, 8, 0.1);
+    -fx-text-fill: #fde047;
+    -fx-border-color: rgba(234, 179, 8, 0.4);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-padding: 10px;
+}
+.toggle-status-pause:selected {
+    -fx-background-color: #eab308;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.toggle-status-cancel {
+    -fx-background-color: rgba(239, 68, 68, 0.1);
+    -fx-text-fill: #fca5a5;
+    -fx-border-color: rgba(239, 68, 68, 0.4);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-padding: 10px;
+}
+.toggle-status-cancel:selected {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+}
+.root-container {
+    -fx-background-color: linear-gradient(to bottom right, #2e1065, #1e1b4b, #4c1d95);
+}
+.button-back-light {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(233, 213, 255, 0.4);
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-text-fill: #e9d5ff;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+}
+
+.button-back-light:hover {
+    -fx-background-color: rgba(233, 213, 255, 0.08);
+    -fx-border-color: #e9d5ff;
+}
+.button-descargar {
+    -fx-background-color: linear-gradient(to right, #d946ef, #a855f7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 12px;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(217, 70, 239, 0.4), 10, 0, 0, 3);
+}
+
+.button-descargar:hover {
+    -fx-background-color: linear-gradient(to right, #f472b6, #c084fc);
+}
+.text-input {
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-padding: 10 15;
+    -fx-border-color: #DDD;
+    -fx-background-color: white;
+}
+
+.text-input:focused {
+    -fx-border-color: #6F42C1;
+}
+.neon-combobox {
+    -fx-background-color: #F8FAFC;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: rgba(244, 63, 94, 0.35);
+    -fx-border-width: 1.8;
+    -fx-padding: 4 8 4 8;
+}
+.neon-combobox:focused {
+    -fx-border-color: #7C3AED;
+}
