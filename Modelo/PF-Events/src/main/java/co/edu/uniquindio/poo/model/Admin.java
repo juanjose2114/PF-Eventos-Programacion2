@@ -7,4 +7,7 @@ public class Admin extends Persona{
     public Admin() {
         super(correo,idUsuario,nombre,ownedByGestorEvento, telefono);
     }
+
+
+
 }
