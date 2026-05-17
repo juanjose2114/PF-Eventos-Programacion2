@@ -1,0 +1,71 @@
+
+.profile-menu-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 14px;
+    -fx-padding: 12px 15px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+.profile-menu-btn:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-text-fill: white;
+}
+
+.profile-menu-btn-active {
+    -fx-background-color: rgba(168, 85, 247, 0.25);
+    -fx-text-fill: #e9d5ff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 12px 15px;
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(217, 70, 239, 0.4);
+    -fx-border-width: 0 0 0 4px;
+}
+
+.button-logout {
+    -fx-background-color: linear-gradient(to right, #ef4444, #b91c1c);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12px;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 0.3), 10, 0, 0, 3);
+}
+.button-logout:hover {
+    -fx-background-color: linear-gradient(to right, #f87171, #ef4444);
+}
+
+.button-back-light {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(233, 213, 255, 0.4);
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-text-fill: #e9d5ff;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+}
+
+.button-back-light:hover {
+    -fx-background-color: rgba(233, 213, 255, 0.08);
+    -fx-border-color: #e9d5ff;
+}
+.button-guardar {
+    -fx-background-color: linear-gradient(to right, #d946ef, #a855f7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 12px;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(217, 70, 239, 0.4), 10, 0, 0, 3);
+}
+
+.button-guardar:hover {
+    -fx-background-color: linear-gradient(to right, #f472b6, #c084fc);
+}
+.root-container {
+    -fx-background-color: linear-gradient(to bottom right, #2e1065, #1e1b4b, #4c1d95);
+}
