@@ -1,0 +1,52 @@
+.payment-option {
+    -fx-text-fill: #f3e8ff;
+    -fx-font-size: 15px;
+    -fx-padding: 10px;
+    -fx-background-color: rgba(255, 255, 255, 0.03);
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+.payment-option:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+}
+.payment-option .radio {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: #a855f7;
+    -fx-border-radius: 10px;
+}
+.payment-option:selected .dot {
+    -fx-background-color: #d946ef;
+}
+
+.summary-card {
+    -fx-background-color: rgba(15, 12, 27, 0.6);
+    -fx-border-color: rgba(217, 70, 239, 0.3);
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(217, 70, 239, 0.2), 15, 0, 0, 0);
+}
+
+.button-confirm-payment {
+    -fx-background-color: linear-gradient(to right, #f59e0b, #d97706);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 12px;
+    -fx-padding: 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(245, 158, 11, 0.4), 10, 0, 0, 3);
+}
+.button-confirm-payment:hover {
+    -fx-background-color: linear-gradient(to right, #fbbf24, #f59e0b);
+}
+
+.button-back-simple {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+    -fx-cursor: hand;
+}
+.button-back-simple:hover {
+    -fx-text-fill: #f3e8ff;
+    -fx-underline: true;
+}
